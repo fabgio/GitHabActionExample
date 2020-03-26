@@ -1,4 +1,6 @@
 on: push
   name:Giovannni
   brenches: master
-runs-on: ubuntu-latest
+  jobs:
+    buld:
+    runs-on: ubuntu-latest
