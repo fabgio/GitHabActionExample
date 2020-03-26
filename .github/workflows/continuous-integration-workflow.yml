@@ -12,5 +12,5 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11.0.4
-      - name: Run h Gradle
-        run: ./gradlew run
+      - name: Build with Gradle
+        run: ./gradlew build
