@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # This step uses GitHub's Gradle Build
-      name: Build
+      - name: Build
       - uses: actions/setup-java@v1
           with:
             java-version: 1.11
