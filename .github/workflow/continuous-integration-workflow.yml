@@ -1,0 +1,4 @@
+on: push
+  name:Giovannni
+  brenches: master
+runs-on: ubuntu-latest
