@@ -4,7 +4,14 @@ on: [push]
 
 jobs:
   build:
-    # Job name is Greeting
-    name: Greeting
+    # Job name is Workflow
+    name: WorkFlow
     # This job runs on Linux
     runs-on: ubuntu-latest
+    steps:
+      # This step uses GitHub's Gradle Build
+      - uses: actions/setup-java@v1
+          with:
+            java-version: 1.11
+      - name: Gradle Build
+        run: echo 'Build ${{ gradlew build }}.'
