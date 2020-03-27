@@ -1,11 +1,9 @@
-plugins {
-    id 'application'
-}
+apply plugin: 'application'
 
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = JavaVersion.VERSION_11
+JavaVersion.VERSION_11
 
 repositories {
     mavenCentral()
@@ -16,5 +14,5 @@ application{
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'junit:junit:4.13'
 }

@@ -1,15 +1,14 @@
 name: Java CI
-
-on: [push]
+on: [push] # The name of the GitHub event that triggers the workflow
 
 jobs:
-  build:
+  build: #Job name
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 11
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v1 #
         with:
           java-version: 11.0.4
       - name: Build with Gradle
